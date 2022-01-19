@@ -63,7 +63,6 @@ class HashTable {
     }
 
     [Symbol.iterator]() {
-        let index = -1;
         const data = this.#table.filter(value => value !== undefined).flat();
         return data.values()
     }
